@@ -1,14 +1,18 @@
 # Lista e seus metodos
-lista = [1, 2, True, "string"]
+lista = [1, 2.0, True, "string"]
 a = 10
+
+lista2 = [4, 8, 10]
+
+lista.extend(lista2)
 # adiciona no final
 lista.append(a)
 # adiciona no indice que especificar
-lista.insert(0, a)
+lista.insert(2, a)
 # remove do final mas também pode remover um indice especifico por exemplo .pop(3) para remover o indice 3
-lista.pop()
+lista.pop(1)
 # remove por valor, sem olhar para indice
-lista.remove(2)
+lista.remove(1)
 # retorna a posição (index) de um item na lista
 lista.index("string")
 
@@ -50,8 +54,7 @@ for k in impar:
 text = ["Thiago", "Rodrigues"]
 
 for nome in text:
-    
+    print(nome)
     for letra in nome:
 
         print(letra)
-    
